@@ -57,3 +57,13 @@ CREATE TABLE IF NOT EXISTS FEEDBACK (
     FOREIGN KEY (USER_ID) REFERENCES USER(ID),
     FOREIGN KEY (ORDER_ITEM_ID) REFERENCES ORDER_ITEM(ID)
 )`;
+// Exporting database and table creation queries
+module.exports = {
+    db,
+    createUserTable,
+    createSandwichTable,
+    createIngredientTable,
+    createCartItemTable,
+    createOrderItemTable,
+    createFeedbackTable
+};
